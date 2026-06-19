@@ -1,0 +1,395 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Chào",
+        "Bạn khỏe không?",
+        "Có ai ở đó không?",
+        "Xin chào",
+        "Chúc một ngày tốt lành",
+        "Có ai ở đây không?",
+        "bạn có đó không?",
+        "chào nhé",
+        "cần giúp đỡ",
+        "??? ??? ??"
+      ],
+      "responses": [
+        "Xin chào! Tôi là chatbot của website ở đây để hỗ trợ bạn",
+        "Rất vui được gặp lại bạn! Bạn cần giúp đỡ gì không?",
+        "Chào bạn, mình có thể giúp gì?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "repeat",
+      "patterns": [
+        "lặp lại",
+        "hỏi lại",
+        "câu hỏi trước",
+        "bạn có thể lặp lại không?",
+        "nói lại lần nữa",
+        "bạn có thể nói lại không?",
+        "tôi cần bạn nhắc lại",
+        "phát lại câu hỏi trước",
+        "làm ơn lặp lại",
+        "bạn có thể nhắc lại được không?"
+      ],
+      "responses": [
+        "Bạn vừa hỏi, để mình lặp lại.",
+        "Mình sẽ nhắc lại câu hỏi trước.",
+        "Đây là câu hỏi trước của bạn: Mình sẽ nói lại.",
+        "Chắc chắn rồi! Đây là câu bạn vừa hỏi.",
+        "Đây là câu hỏi bạn vừa hỏi mình."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "tạm biệt",
+        "hẹn gặp lại",
+        "bye bye",
+        "chào nhé",
+        "tôi đi đây",
+        "chào tạm biệt",
+        "nói chuyện sau nhé",
+        "ttyl",
+        "tôi phải đi",
+        "gtg"
+      ],
+      "responses": [
+        "Thật buồn khi thấy bạn rời đi :(",
+        "Hẹn gặp lại bạn sau",
+        "Tạm biệt!",
+        "Mong bạn sớm quay lại"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "what is the name of your developers",
+        "what is the name of your creators",
+        "what is the name of the developers",
+        "what is the name of the creators",
+        "who created you",
+        "your developers",
+        "your creators",
+        "who are your developers",
+        "developers",
+        "you are made by",
+        "you are made by whom",
+        "who created you",
+        "who create you",
+        "creators",
+        "who made you",
+        "who designed you"
+      ],
+      "responses": [
+        "College students"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "name",
+        "your name",
+        "do you have a name",
+        "what are you called",
+        "what is your name",
+        "what should I call you",
+        "whats your name?",
+        "what are you",
+        "who are you",
+        "who is this",
+        "what am i chatting to",
+        "who am i taking to",
+        "what are you"
+      ],
+      "responses": [
+        "You can call me Mind Reader.",
+        "I'm Mind Reader",
+        "I am a Chatbot.",
+        "I am your helper"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "giờ mở cửa của cửa hàng",
+        "giờ hoạt động của cửa hàng là gì",
+        "ngày làm việc",
+        "khi nào các bạn mở cửa",
+        "giờ làm việc của bạn là gì",
+        "giờ hoạt động",
+        "khi nào cửa hàng mở cửa",
+        "giờ mở cửa cửa hàng",
+        "giờ cửa hàng như thế nào",
+        "cửa hàng có mở cửa vào thứ bảy không",
+        "nói gì đó về giờ mở cửa của cửa hàng",
+        "giờ làm việc của cửa hàng là gì",
+        "khi nào tôi nên đến cửa hàng",
+        "khi nào tôi nên ghé cửa hàng",
+        "giờ đi cửa hàng của tôi là khi nào",
+        "giờ mở cửa cửa hàng",
+        "giờ hoạt động cửa hàng"
+      ],
+      "responses": [
+        "Cửa hàng mới từ lúc 8 giờ sáng đến 22 giờ mỗi ngày!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "number",
+      "patterns": [
+        "thêm thông tin",
+        "thông tin liên hệ",
+        "làm sao để liên hệ với cửa hàng",
+        "số điện thoại của cửa hàng",
+        "số của cửa hàng",
+        "Số liên lạc của bạn là gì",
+        "Số điện thoại liên hệ?",
+        "làm sao để gọi cho bạn",
+        "Số điện thoại cửa hàng?",
+        "làm sao tôi có thể liên hệ với bạn",
+        "Tôi có thể lấy số điện thoại của bạn không",
+        "làm sao tôi gọi cho bạn",
+        "số điện thoại",
+        "số liên lạc",
+        "gọi"
+      ],
+      "responses": [
+        "Bạn có thể liên lạc với: 0122 768 126"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "products",
+      "patterns": [
+        "Cửa hàng có những sản phẩm gì?",
+        "Cửa hàng bán gì?",
+        "Bạn có những sản phẩm nào?",
+        "Sản phẩm nào đang bán?",
+        "Tôi muốn xem danh sách sản phẩm",
+        "Có những mặt hàng nào vậy?",
+        "Danh sách sản phẩm cửa hàng có?",
+        "Bạn đang kinh doanh những sản phẩm nào?",
+        "Có thể cho tôi biết các loại sản phẩm ở đây không?",
+        "Tôi muốn biết cửa hàng có gì"
+      ],
+      "responses": [
+        "Cửa hàng có: "
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "pizza",
+      "patterns": [
+        "Cửa hàng có những loại pizza nào?",
+        "Có những pizza gì vậy?",
+        "Tôi muốn biết các loại pizza ở đây",
+        "Pizza ở cửa hàng có những vị gì?",
+        "Bạn có pizza gì không?",
+        "Các loại pizza bạn đang bán?",
+        "Loại pizza nào ngon nhất?",
+        "Pizza ở đây có đặc biệt gì?",
+        "Có pizza bò không?",
+        "Có pizza hải sản không?",
+        "Có pizza nào phù hợp cho người ăn chay không?"
+      ],
+      "responses": [
+        "Cửa hàng chúng tôi có các loại pizza như sau: "
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Cửa hàng nằm ở đâu?",
+        "Cửa hàng tọa lạc ở đâu?",
+        "Cửa hàng ở đâu?",
+        "Cửa hàng được đặt ở đâu?",
+        "Địa chỉ của cửa hàng là gì?",
+        "Làm sao để đến cửa hàng?",
+        "Vị trí cửa hàng ở đâu?",
+        "Địa chỉ cửa hàng là gì?",
+        "Cửa hàng ở chỗ nào?",
+        "Tôi có thể đến cửa hàng bằng cách nào?",
+        "Địa chỉ chính xác của cửa hàng là gì?",
+        "Địa chỉ cửa hàng là gì vậy?",
+        "địa chỉ",
+        "vị trí"
+      ],
+      "responses": [
+        "Địa chỉ của cửa hàng là: 736 Nguyễn Trãi, Phường 11, Quận 5, Tp.HCM"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "chicken",
+      "patterns": [
+        "Cửa hàng có bán gà rán không?",
+        "Gà rán có những loại nào?",
+        "Tôi muốn ăn gà rán",
+        "Có món gà rán nào không?",
+        "Bạn có gà rán không?",
+        "Gà rán ở đây có ngon không?",
+        "Gà rán giá bao nhiêu?",
+        "Gà rán có ăn kèm gì không?",
+        "Gà rán có cay không?",
+        "Có gà rán cho trẻ em không?",
+        "Tôi muốn biết thêm về món gà rán",
+        "Cửa hàng có combo gà rán không?",
+        "Gà rán có mấy phần?",
+        "Gà rán được làm như thế nào?",
+        "Có khuyến mãi cho gà rán không?"
+      ],
+      "responses": [
+        "Cửa hàng có các loại gà rán như sau: "
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "noodle",
+      "patterns": [
+        "Cửa hàng có bán mì không?",
+        "Có những loại mì nào vậy?",
+        "Mì ở đây có ngon không?",
+        "Có mì cay không?",
+        "Có mì xào không?",
+        "Mì giá bao nhiêu?",
+        "Có mì gói không?",
+        "Mì ăn liền ở đây như thế nào?",
+        "Tôi muốn gọi một phần mì",
+        "Có mì chay không?",
+        "Có mì thịt bò không?",
+        "Có mì hải sản không?"
+      ],
+      "responses": [
+        "Cửa hàng có các loại mì ý như sau: "
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "drink",
+      "patterns": [
+        "Có những loại nước nào?",
+        "Cửa hàng có bán nước không?",
+        "Tôi muốn gọi nước",
+        "Có nước suối không?",
+        "Có nước ngọt không?",
+        "Có trà sữa không?",
+        "Có nước trái cây không?",
+        "Có combo nước + món ăn không?",
+        "Nước ở đây giá bao nhiêu?",
+        "Có nước cho trẻ em không?",
+        "Tôi muốn biết menu nước"
+      ],
+      "responses": [
+        "Cửa hàng có các loại nước sau: "
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "other",
+      "patterns": [
+        "Cửa hàng có món ăn vặt không?",
+        "Có những món khác ngoài pizza và gà rán không?",
+        "Có món ăn để tráng miệng không?",
+        "Có món nào ăn nhẹ không?",
+        "Còn những món gì khác nữa?"
+      ],
+      "responses": [
+        "My College has total 2 floors "
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "random",
+      "patterns": [
+        "Tôi yêu bạn",
+        "Bạn sẽ cưới tôi chứ?",
+        "Bạn có yêu tôi không",
+        "Tôi biết bạn yêu tôi mà"
+      ],
+      "responses": [
+        "Rất tiếc tôi chỉ được lập trình để hỗ trợ bạn trong việc tìm hiểu cửa hàng."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "swear",
+      "patterns":[
+        "đm",
+        "vãi",
+        "mẹ mày",
+        "câm đi",
+        "đồ ngu",
+        "thằng ngu",
+        "đồ khốn",
+        "con chó",
+        "mày bị điên à"
+      ],
+      "responses":[
+        "Bạn vui lòng sử dụng ngôn ngữ lịch sự.",
+        "Xin hãy giữ lịch sự khi trò chuyện.",
+        "Tôi sẽ hỗ trợ bạn tốt hơn nếu bạn nói chuyện một cách tôn trọng."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "salutaion",
+      "patterns": [
+        "oke",
+        "okie",
+        "làm tốt lắm",
+        "tốt lắm",
+        "cảm ơn đã giúp đỡ",
+        "cảm ơn bạn",
+        "không sao đâu",
+        "cảm ơn",
+        "làm tốt ghê",
+        "k",
+        "ok",
+        "được rồi"
+      ],
+      "responses": [
+        "Rất vui vì đã giúp được bạn!",
+        "Bạn cần thêm gì nữa không? Mình luôn sẵn sàng hỗ trợ.",
+        "Không có chi, mình luôn ở đây nếu bạn cần thêm gì!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "task",
+      "patterns": [
+        "Bạn có thể làm được gì?",
+        "Bạn có thể hỗ trợ những gì?",
+        "Bạn làm được những việc gì?",
+        "Bạn có thể giúp gì cho tôi?",
+        "Bạn hỗ trợ tôi như thế nào?",
+        "Tại sao tôi nên dùng bạn?"
+      ],
+      "responses": [
+        "Tôi có thể cung cấp thông tin về cửa hàng cho bạn",
+        "Bạn có thể hỏi tôi bất cứ thứ gì liên quan đến cửa hàng",
+        "Tôi có thể hỗ trợ bạn trong việc tìm kiếm các sản phẩm mong muốn"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hod",
+      "patterns": [
+        "quản lý cửa hàng là ai",
+        "tên quản lý cửa hàng",
+        "ai là người phụ trách ở đây"
+      ],
+      "responses": [
+        "Quản lý ở đây là: "
+      ],
+      "context_set": ""
+    }
+  ]
+}

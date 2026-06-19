@@ -1,0 +1,506 @@
+[
+  {
+    "productId": "Pizza0001",
+    "productName": "Pizza Hải Sản Sốt Tiêu",
+    "category": "pizza",
+    "type": "hải sản",
+    "discount": 0,
+    "quantity": 215000,
+    "description": "Tăng 50% lượng thêm Phô Mai Mozzarella, Phô Mai Cheddar, Xốt Tiêu Đen.",
+    "size": [
+      { "name": "Nhỏ", "price": 0 },
+      { "name": "Vừa", "price": 20000 },
+      { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+      { "name": "Mỏng", "price": 0 },
+      { "name": "Dày", "price": 10000 },
+      { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Phô mai thêm", "price": 10000},
+        {"name": "Tôm", "price": 15000},
+        {"name": "Mực", "price": 15000}
+    ],
+    "imagePath": "/images/products/PizzaHaiSanSotTieu.png"
+  },
+  {
+    "productId": "Pizza0002",
+    "productName": "Pizza Hải Sản Sốt Mayonnaise",
+    "category": "pizza",
+    "type": "hải sản",
+    "discount": 0,
+    "quantity": 215000,
+    "description": "Tăng 50% lượng thêm Phô Mai Mozzarella, Xốt Mayonnaise, Húng Tây, Hành.",
+    "size": [
+      { "name": "Nhỏ", "price": 0 },
+      { "name": "Vừa", "price": 20000 },
+      { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+      { "name": "Mỏng", "price": 0 },
+      { "name": "Dày", "price": 10000 },
+      { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Phô mai thêm", "price": 10000},
+        {"name": "Tôm", "price": 15000},
+        {"name": "Mực", "price": 15000}
+    ],
+    "imagePath": "/images/products/PizzaHaiSanSotMayonnaise.png"
+  },
+  {
+    "productId": "Pizza0003",
+    "productName": "Pizza Hải Sản Sốt Pesto Kem Chanh",
+    "category": "pizza",
+    "type": "hải sản",
+    "discount": 0,
+    "quantity": 225000,
+    "description": "Tăng 50% lượng topping protein: Mưc Khoanh, Tôm Có Đuôi; Thêm Phô Mai Mozzarella.",
+    "size": [
+      { "name": "Nhỏ", "price": 0 },
+      { "name": "Vừa", "price": 20000 },
+      { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+      { "name": "Mỏng", "price": 0 },
+      { "name": "Dày", "price": 10000 },
+      { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Phô mai thêm", "price": 10000},
+        {"name": "Tôm", "price": 15000},
+        {"name": "Mực", "price": 15000}
+    ],
+    "imagePath": "/images/products/PizzaHaiSanSotPesto.png"
+  },
+  {
+    "productId": "Pizza0004",
+    "productName": "Pizza Hải Sản Sốt Cà Chua",
+    "category": "pizza",
+    "type": "hải sản",
+    "discount": 10,
+    "quantity": 215000,
+    "description": "Xốt Cà Chua, Phô Mai Mozzarella, Tôm, Mực, Thanh Cua, Hành Tây.",
+    "size": [
+        { "name": "Nhỏ", "price": 0 },
+        { "name": "Vừa", "price": 20000 },
+        { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+        { "name": "Mỏng", "price": 0 },
+        { "name": "Dày", "price": 10000 },
+        { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Phô mai thêm", "price": 10000},
+        {"name": "Tôm", "price": 15000},
+        {"name": "Mực", "price": 15000},
+        {"name": "Hành tây", "price": 10000}
+    ],
+    "imagePath": "/images/products/PizzaHaiSanSotCa.png"
+  },
+  {
+    "productId": "Pizza0004",
+    "productName": "Pizza Hải Sản Sốt Xoài",
+    "category": "pizza",
+    "type": "hải sản",
+    "discount": 0,
+    "quantity": 195000,
+    "description": "Phô Mai Mozzarella, Xốt Xoài, Tôm Có Đuôi, Mưc Khoanh, Hành Tây, Cà Chua, Lá Mùi Tây, Xốt Bơ Tỏi Viền Bánh.",
+    "size": [
+        { "name": "Nhỏ", "price": 0 },
+        { "name": "Vừa", "price": 20000 },
+        { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+        { "name": "Mỏng", "price": 0 },
+        { "name": "Dày", "price": 10000 },
+        { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Phô mai thêm", "price": 10000},
+        {"name": "Tôm", "price": 15000},
+        {"name": "Mực", "price": 15000},
+        {"name": "Hành tây", "price": 10000},
+        {"name": "Cà chua", "price": 10000}
+    ],
+    "imagePath": "/images/products/PizzaHaiSanSotXoai.png"
+  },
+  {
+    "productId": "Pizza0012",
+    "productName": "Pizza Bò Mỹ Sốt Phô Mai",
+    "category": "pizza",
+    "type": "bò",
+    "discount": 0,
+    "quantity": 215000,
+    "description": "Tăng 50% lượng topping protein: Thịt Bò Bơ Gơ Mỹ, Thịt Heo Xông Khói.",
+    "size": [
+        { "name": "Nhỏ", "price": 0 },
+        { "name": "Vừa", "price": 20000 },
+        { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+        { "name": "Mỏng", "price": 0 },
+        { "name": "Dày", "price": 10000 },
+        { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Phô mai thêm", "price": 10000},
+        {"name": "Bò", "price": 25000}
+    ],
+    "imagePath": "/images/products/PizzaBoSotPhoMai.png"
+  },
+  {
+    "productId": "Pizza0013",
+    "productName": "Pizza Bò Nướng Phô Mai Với Sốt BBQ",
+    "category": "pizza",
+    "type": "bò",
+    "discount": 10,
+    "quantity": 195000,
+    "description": "Bò Beefsteak, Xốt Demi-Glace (Xốt Bít Tết), Sốt Kem Chua, Phô Mai Mozzarella, Nấm, Cà Chua, Hành Tây, Bột Rong Biển.",
+    "size": [
+        { "name": "Nhỏ", "price": 0 },
+        { "name": "Vừa", "price": 20000 },
+        { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+        { "name": "Mỏng", "price": 0 },
+        { "name": "Dày", "price": 10000 },
+        { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Phô mai thêm", "price": 10000},
+        {"name": "Bò", "price": 25000},
+        {"name": "Sốt thêm", "price": 10000}
+    ],
+    "imagePath": "/images/products/PizzaBoNuongSotBBQ.png"
+  },
+  {
+    "productId": "Pizza0021",
+    "productName": "Pizza Gà Phô Mai Thịt Heo Xông Khói",
+    "category": "pizza",
+    "type": "gà",
+    "discount": 0,
+    "quantity": 155000,
+    "description": "Xốt Phô Mai, Gà Viên, Thịt Heo Xông Khói, Phô Mai Mozzarella, Cà Chua.",
+    "size": [
+        { "name": "Nhỏ", "price": 0 },
+        { "name": "Vừa", "price": 20000 },
+        { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+        { "name": "Mỏng", "price": 0 },
+        { "name": "Dày", "price": 10000 },
+        { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Phô mai thêm", "price": 10000},
+        {"name": "Gà thêm", "price": 20000},
+        {"name": "Thịt xông khói thêm", "price": 20000}
+    ],
+    "imagePath": "/images/products/PizzaGaPhoMaiThitHeoXongKhoi.png"
+  },
+  {
+    "productId": "Pizza0031",
+    "productName": "Pizza Xúc Xích Phô Mai",
+    "category": "pizza",
+    "type": "heo",
+    "discount": 0,
+    "quantity": 215000,
+    "description": "Xốt phô mai, Phô mai Mozzarella, Xúc Xích, Thịt Heo Xông Khói, Bắp (Ngô), Thơm (Dứa).",
+    "size": [
+        { "name": "Nhỏ", "price": 0 },
+        { "name": "Vừa", "price": 20000 },
+        { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+        { "name": "Mỏng", "price": 0 },
+        { "name": "Dày", "price": 10000 },
+        { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Phô mai thêm", "price": 10000},
+        {"name": "Xúc xích thêm", "price": 15000},
+        {"name": "Bắp thêm", "price": 10000},
+        {"name": "Thơm(dứa) thêm", "price": 10000}
+    ],
+    "imagePath": "/images/products/PizzaXucXichPhoMai.png"
+  },
+  {
+    "productId": "Pizza0041",
+    "productName": "Pizza Rau Củ Thập Cẩm",
+    "category": "pizza",
+    "type": "rau củ",
+    "discount": 0,
+    "quantity": 135000,
+    "description": "Xốt Cà Chua, Phô Mai Mozzarella, Hành Tây, Ớt Chuông Xanh, Ô-liu, Nấm Mỡ, Cà Chua, Thơm (dứa).",
+    "size": [
+        { "name": "Nhỏ", "price": 0 },
+        { "name": "Vừa", "price": 20000 },
+        { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+        { "name": "Mỏng", "price": 0 },
+        { "name": "Dày", "price": 10000 },
+        { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [
+        {"name": "Ớt chuông thêm", "price": 10000},
+        {"name": "Hành tây thêm", "price": 10000},
+        {"name": "Nấm mỡ thêm", "price": 10000},
+        {"name": "Thơm(dứa) thêm", "price": 10000}
+    ],
+    "imagePath": "/images/products/PizzaRauCuThapCam.png"
+  },
+  {
+    "productId": "Pizza0042",
+    "productName": "Pizza Truyền Thống Ý",
+    "category": "pizza",
+    "type": "rau củ",
+    "discount": 20,
+    "quantity": 125000,
+    "description": "Xốt Cà Chua, Phô Mai Mozzarella.",
+    "size": [
+        { "name": "Nhỏ", "price": 0 },
+        { "name": "Vừa", "price": 20000 },
+        { "name": "Lớn", "price": 40000 }
+    ],
+    "crust": [
+        { "name": "Mỏng", "price": 0 },
+        { "name": "Dày", "price": 10000 },
+        { "name": "Phô mai", "price": 20000 }
+    ],
+    "extra": [],
+    "imagePath": "/images/products/PizzaTruyenThong.png"
+  },
+  {
+    "productId": "MyY0001",
+    "productName": "Mỳ Ý Tôm Sốt Marinara",
+    "category": "mỳ ý",
+    "type": "hải sản",
+    "discount": 0,
+    "quantity": 109000,
+    "description": "Mỳ Ý, Hành Tây, Tôm, Sốt Marinara, Ớt Vẩy, Bột Rong Biển, Bột Tỏi",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/MyYTom.png"
+  },
+  {
+    "productId": "MyY0002",
+    "productName": "Mỳ Ý Bò Sốt Marinara",
+    "category": "mỳ ý",
+    "type": "bò",
+    "discount": 0,
+    "quantity": 109000,
+    "description": "Mỳ Ý, Xốt Bò Bằm, Bột Rong Biển, Bột Tỏi.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/MyYBoBam.png"
+  },
+  {
+    "productId": "MyY0003",
+    "productName": "Mỳ Ý Thị Heo Xông Khói Sốt Marinara",
+    "category": "mỳ ý",
+    "type": "bò",
+    "discount": 0,
+    "quantity": 89000,
+    "description": "Mỳ Ý, Thịt Xông Khói, Thịt Xông Khói Miếng, Xốt Marinara, Ớt Vẩy, Bột Rong Biển, Bột Tỏi.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/MyYThitHeoXongKhoi.png"
+  },
+  {
+    "productId": "MyY0004",
+    "productName": "Mỳ Ý Rau Củ Sốt Marinara",
+    "category": "mỳ ý",
+    "type": "rau củ",
+    "discount": 0,
+    "quantity": 89000,
+    "description": "Mỳ Ý, Ớt Chuông Xanh, Nấm, Cà Chua, Dứa, Ô-Liu Đen, Xốt Marinara, Bột Rong Biển, Bột Tỏi.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/MyYRauCu.png"
+  },
+  {
+    "productId": "Ga0001",
+    "productName": "Đùi Gà Chiên Giòn",
+    "category": "gà",
+    "type": "đùi gà",
+    "discount": 0,
+    "quantity": 70000,
+    "description": "2 Miếng Gà Giòn Cay/Gà Truyền Thống/Gà Giòn Không Cay + 2 Gói tương (cà/ ớt).",
+    "size": [],
+    "crust": [],
+    "extra": [
+      { "name": "2 đùi gà", "price": 0 },
+      { "name": "3 đùi gà", "price": 15000 },
+      { "name": "4 đùi gà", "price": 25000 }
+    ],
+    "imagePath": "/images/products/DuiGa.png"
+  },
+  {
+    "productId": "Ga0002",
+    "productName": "Cánh Gà Chiên Giòn",
+    "category": "gà",
+    "type": "cánh gà",
+    "discount": 0,
+    "quantity": 70000,
+    "description": "2 Miếng Cánh Gà Giòn Cay/Gà Truyền Thống/Gà Giòn Không Cay + 2 Gói tương (cà/ ớt).",
+    "size": [],
+    "crust": [],
+    "extra": [
+      { "name": "2 cánh gà", "price": 0 },
+      { "name": "3 cánh gà", "price": 15000 },
+      { "name": "4 cánh gà", "price": 25000 }
+    ],
+    "imagePath": "/images/products/CanhGa.png"
+  },
+  {
+    "productId": "Nuoc0001",
+    "productName": "7Up",
+    "category": "đồ uống",
+    "type": "",
+    "discount": 0,
+    "quantity": 15000,
+    "description": "7Up lon 330ml.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/7Up.png"
+  },
+  {
+    "productId": "Nuoc0002",
+    "productName": "Pepsi",
+    "category": "đồ uống",
+    "type": "",
+    "discount": 0,
+    "quantity": 15000,
+    "description": "Pepsi lon 330ml.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/Pepsi.png"
+  },
+  {
+    "productId": "Nuoc0003",
+    "productName": "Pepsi Zero",
+    "category": "đồ uống",
+    "type": "",
+    "discount": 0,
+    "quantity": 15000,
+    "description": "Pepsi Zero lon 330ml.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/PepsiZero.png"
+  },
+  {
+    "productId": "Nuoc0004",
+    "productName": "Sting dâu",
+    "category": "đồ uống",
+    "type": "",
+    "discount": 0,
+    "quantity": 15000,
+    "description": "Sting cam chai 330ml.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/Sting.png"
+  },
+  {
+    "productId": "Khac0000",
+    "productName": "Nước suối Aquafina",
+    "category": "đồ uống",
+    "type": "",
+    "discount": 0,
+    "quantity": 10000,
+    "description": "Nước suôi Aquafina chai 330ml.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/Aquafina.png"
+  },
+  {
+    "productId": "Khac0001",
+    "productName": "Xúc Xích Xông Khói Đút Lò",
+    "category": "khác",
+    "type": "",
+    "discount": 0,
+    "quantity": 49000,
+    "description": "Xúc Xích Xông Khói, Sốt BBQ",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/XucXichXongKhoi.png"
+  },
+  {
+    "productId": "Khac0002",
+    "productName": "Bánh Mì Nướng Bơ Tỏi",
+    "category": "khác",
+    "type": "",
+    "discount": 0,
+    "quantity": 49000,
+    "description": "Bánh Mì, Bơ, Bột Tỏi, Sốt Pizza.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/BanhMiNuongBoToi.png"
+  },
+  {
+    "productId": "Khac0003",
+    "productName": "Khoai Tây Phô Mai Đút Lò",
+    "category": "khác",
+    "type": "",
+    "discount": 0,
+    "quantity": 49000,
+    "description": "Khoai Tây, Thịt Heo Xông Khói, Phô Mai.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/KhoaiTayPhoMaiDutLo.png"
+  },
+  {
+    "productId": "Khac0004",
+    "productName": "Bánh Sô-Cô-La Đút Lò - Choco Lava",
+    "category": "khác",
+    "type": "",
+    "discount": 0,
+    "quantity": 49000,
+    "description": "Bánh Sô-Cô-La Nguyên Chất.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/BanhChocolate.png"
+  },
+  {
+    "productId": "Combo0001",
+    "productName": "Combo Đỉnh",
+    "category": "combo",
+    "type": "",
+    "discount": 0,
+    "quantity": 249000,
+    "description": "1 Phần Gà, 1 Phần Mỳ Ý Hải Sản và 2 Lon Pepsi.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/Combo1.png"
+  },
+  {
+    "productId": "Combo0002",
+    "productName": "Combo Chất",
+    "category": "combo",
+    "type": "",
+    "discount": 0,
+    "quantity": 150000,
+    "description": "1 Phần Pizza, 1 Phần Gà, 1 Phần Mỳ Ý Rau Củ và 1 Lon Pepsi.",
+    "size": [],
+    "crust": [],
+    "extra": [],
+    "imagePath": "/images/products/Combo2.png"
+  }
+]
