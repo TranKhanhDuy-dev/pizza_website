@@ -443,6 +443,8 @@ const createRoutes = require('./order')(OrderModel, CartModel);
 app.use("/api", createRoutes);
 
 // Server lắng nghe cổng 3001
-app.listen(3001, () => {
-  console.log('🚀 Backend is running on http://localhost:3001');
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log(`🚀 Backend running on port ${PORT}`);
 });
