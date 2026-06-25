@@ -250,7 +250,7 @@ async function sendVerificationEmail(to, code) {
   });
 
   await transporter.sendMail({
-    from: '"Xác minh" <trankhanhduy7222@gmail.com>',
+    from: `"Xác minh" <${process.env.EMAIL_USER}>`,
     to,
     subject: 'Mã xác minh của bạn',
     text: `Mã xác minh của bạn là: ${code}`,
