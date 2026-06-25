@@ -17,7 +17,7 @@ const Discount = ({ user, setShowLogin }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:3001/api/products")
+    axios.get("import.meta.env.VITE_API_URL/api/products")
       .then(res => {
         if (res.data.success) {
           // Lọc chỉ lấy sản phẩm có discount > 0
@@ -76,7 +76,7 @@ const Discount = ({ user, setShowLogin }) => {
     const unitPrice = basePrice + sizePrice + crustPrice + extrasPrice;
 
     try {
-      const response = await axios.post("http://localhost:3001/api/cart/add", {
+      const response = await axios.post("import.meta.env.VITE_API_URL/api/cart/add", {
         guestUsername: user.username,
         productId: selectedProduct.productId,
         productName: selectedProduct.productName,

@@ -20,7 +20,7 @@ const AllProducts = ({ user, type, setShowLogin }) => {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3001/api/products")
+    axios.get("import.meta.env.VITE_API_URL/api/products")
       .then(res => {
         if (res.data.success) {
           setProducts(res.data.products);
@@ -122,7 +122,7 @@ const AllProducts = ({ user, type, setShowLogin }) => {
     if (!productId) return;
 
     try {
-      const res = await axios.delete(`http://localhost:3001/api/products/${productId}`);
+      const res = await axios.delete(`import.meta.env.VITE_API_URL/api/products/${productId}`);
       if (res.data.success) {
         setProducts(prev => prev.filter(p => p.productId !== productId));
         setDeleteMessage("Xoá sản phẩm thành công!");
@@ -169,7 +169,7 @@ const AllProducts = ({ user, type, setShowLogin }) => {
     }
 
     try {
-      const response = await axios.post("http://localhost:3001/api/cart/add", {
+      const response = await axios.post("import.meta.env.VITE_API_URL/api/cart/add", {
         guestUsername: user.username,
         productId: selectedProduct.productId,
         productName: selectedProduct.productName,

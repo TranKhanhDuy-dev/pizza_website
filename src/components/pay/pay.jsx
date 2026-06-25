@@ -43,7 +43,7 @@ const Pay = ({ user: propUser, type: propType }) => {
   useEffect(() => {
     if (!user?.username) return;
     axios
-      .get(`http://localhost:3001/api/cart/${user.username}`)
+      .get(`import.meta.env.VITE_API_URL/api/cart/${user.username}`)
       .then(res => {
         if (res.data.success) {
           setCartItems(res.data.cartItems || []);
@@ -80,7 +80,7 @@ const Pay = ({ user: propUser, type: propType }) => {
 
     try {
       // Gửi yêu cầu tạo thanh toán (chưa tạo đơn hàng)
-      const momoRes = await axios.post("http://localhost:3001/api/momo/pay", {
+      const momoRes = await axios.post("import.meta.env.VITE_API_URL/api/momo/pay", {
         amount: total,
         orderInfo: `Thanh toán đơn hàng cho ${user.guestname || user.staffname}`,
         userInfo,
@@ -110,7 +110,7 @@ const Pay = ({ user: propUser, type: propType }) => {
     setSuccessMessage("");
 
     try {
-      const response = await axios.post("http://localhost:3001/api/create", {
+      const response = await axios.post("import.meta.env.VITE_API_URL/api/create", {
         username: user.username,
         items: cartItems,
         total,

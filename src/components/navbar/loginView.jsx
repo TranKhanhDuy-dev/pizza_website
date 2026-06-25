@@ -42,7 +42,7 @@ const LoginModal = ({ show, onClose, onLogin, onSwitchToRegister }) => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:3001/login", {
+      const response = await fetch("import.meta.env.VITE_API_URL/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -75,7 +75,7 @@ const LoginModal = ({ show, onClose, onLogin, onSwitchToRegister }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:3001/reset-password", {
+      const response = await fetch("import.meta.env.VITE_API_URL/reset-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(forgotData),
@@ -98,7 +98,7 @@ const LoginModal = ({ show, onClose, onLogin, onSwitchToRegister }) => {
 
   const handleSendCode = async () => {
     try {
-      const response = await fetch("http://localhost:3001/send-verification-code", {
+      const response = await fetch("import.meta.env.VITE_API_URL/send-verification-code", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ contact: forgotData.contact }),

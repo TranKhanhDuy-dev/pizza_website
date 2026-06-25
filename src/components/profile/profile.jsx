@@ -73,7 +73,7 @@ const Profile = ({ user: propUser }) => {
         const uploadData = new FormData();
         uploadData.append('avatar', formData.avatarFile);
 
-        const uploadRes = await fetch("http://localhost:3001/upload-avatar", {
+        const uploadRes = await fetch("import.meta.env.VITE_API_URL/upload-avatar", {
           method: 'POST',
           body: uploadData,
         });
@@ -88,7 +88,7 @@ const Profile = ({ user: propUser }) => {
       }
 
       // Gửi profile kèm avatarPath mới
-      const response = await fetch("http://localhost:3001/update-profile", {
+      const response = await fetch("import.meta.env.VITE_API_URL/update-profile", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData, avatarPath, username: user.username }),

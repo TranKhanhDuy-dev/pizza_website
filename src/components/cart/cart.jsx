@@ -28,7 +28,7 @@ const CartPage = ({ user }) => {
   // Lấy giỏ hàng từ DB
   useEffect(() => {
     if (!user?.username) return;
-    axios.get(`http://localhost:3001/api/cart/${user.username}`)
+    axios.get(`import.meta.env.VITE_API_URL/api/cart/${user.username}`)
       .then(res => {
         if (res.data.success) {
           setCartItems(res.data.cartItems);
@@ -41,7 +41,7 @@ const CartPage = ({ user }) => {
   useEffect(() => {
     if (selectedTab === "orders" && user?.username) {
       setLoadingOrders(true);
-      axios.get(`http://localhost:3001/api/orders/${user.username}`)
+      axios.get(`import.meta.env.VITE_API_URL/api/orders/${user.username}`)
         .then(res => {
           if (res.data.success) {
             const sortedOrders = res.data.orders.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
@@ -58,7 +58,7 @@ const CartPage = ({ user }) => {
     let total = 0;
     for (const item of items) {
       // Lấy cả cart item và product từ backend
-      const res = await axios.get(`http://localhost:3001/api/cart/item/${item._id}`);
+      const res = await axios.get(`import.meta.env.VITE_API_URL/api/cart/item/${item._id}`);
       if (res.data.success && res.data.product && res.data.item) {
         const product = res.data.product;
         const cartItem = res.data.item;
@@ -117,7 +117,7 @@ const CartPage = ({ user }) => {
   // Xóa sản phẩm
   const confirmDeleteItem = () => {
     if (!itemToDelete) return;
-    axios.delete(`http://localhost:3001/api/cart/delete/${itemToDelete}`)
+    axios.delete(`import.meta.env.VITE_API_URL/api/cart/delete/${itemToDelete}`)
       .then(res => {
         if (res.data.success) {
           const updated = cartItems.filter(item => item._id !== itemToDelete);
@@ -137,7 +137,7 @@ const CartPage = ({ user }) => {
     const newQuantity = item.quantity + delta;
     if (newQuantity < 1) return;
 
-    axios.put("http://localhost:3001/api/cart/update-quantity", { itemId, quantity: newQuantity })
+    axios.put("import.meta.env.VITE_API_URL/api/cart/update-quantity", { itemId, quantity: newQuantity })
       .then(res => {
         if (res.data.success) {
           const updated = cartItems.map((it) => it._id === itemId ? { ...it, quantity: newQuantity } : it);
@@ -150,7 +150,7 @@ const CartPage = ({ user }) => {
   // Mở modal chỉnh sửa: lấy cả cart item và product từ backend
   const openEditModal = async (itemId) => {
     try {
-      const res = await axios.get(`http://localhost:3001/api/cart/item/${itemId}`);
+      const res = await axios.get(`import.meta.env.VITE_API_URL/api/cart/item/${itemId}`);
       if (res.data.success && res.data.product && res.data.item) {
         setEditProduct(res.data.product);
         setEditCartItem(res.data.item);
@@ -167,7 +167,7 @@ const CartPage = ({ user }) => {
 
   // Lưu chỉnh sửa
   const handleSaveEdit = async () => {
-    await axios.put("http://localhost:3001/api/cart/update-item", {
+    await axios.put("import.meta.env.VITE_API_URL/api/cart/update-item", {
       itemId: editCartItem._id,
       size: editSize,
       crust: editCrust,
@@ -176,7 +176,7 @@ const CartPage = ({ user }) => {
     });
     setIsEditModalOpen(false);
     // Reload cart
-    axios.get(`http://localhost:3001/api/cart/${user.username}`).then(res => {
+    axios.get(`import.meta.env.VITE_API_URL/api/cart/${user.username}`).then(res => {
       if (res.data.success) {
         setCartItems(res.data.cartItems);
         updateTotal(res.data.cartItems);
@@ -527,7 +527,7 @@ function CartItemRow({ item, openEditModal, updateQuantity, setItemToDelete, set
 
   useEffect(() => {
     // Lấy cả cart item và product từ backend
-    axios.get(`http://localhost:3001/api/cart/item/${item._id}`).then(res => {
+    axios.get(`import.meta.env.VITE_API_URL/api/cart/item/${item._id}`).then(res => {
       if (res.data.success && res.data.product) setProduct(res.data.product);
     });
   }, [item._id]);
