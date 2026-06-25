@@ -29,10 +29,11 @@ function App() {
   const [type, setType] = useState(null);
   const [showLogin, setShowLogin] = useState(false);
   const [productCategories, setProductCategories] = useState([]);
+  const API_URL = import.meta.env.VITE_API_URL;
 
   // Kiểm tra kết nối backend
   useEffect(() => {
-  axios.get('http://localhost:3001/api/test-db')
+  axios.get(`${API_URL}/api/test-db`)
     .then(res => {
       setDbStatus(res.data.message);
       console.log("✅ Kết nối thành công backend:", res.data.message);
