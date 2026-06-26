@@ -80,7 +80,11 @@ const Pay = ({ user: propUser, type: propType }) => {
 
     try {
       // Gửi yêu cầu tạo thanh toán (chưa tạo đơn hàng)
-      const momoRes = await axios.get(`${import.meta.env.VITE_API_URL}/api/momo/pay`, {
+<<<<<<< HEAD
+      const momoRes = await axios.post("import.meta.env.VITE_API_URL/api/momo/pay", {
+=======
+es = await axios.get(`${import.metaconst momoRta.env.VITE_API_URL}/api/momo/pay`, {
+>>>>>>> c6f7cb06b6ef44b29e46250c71f8ead7476f0316
         amount: total,
         orderInfo: `Thanh toán đơn hàng cho ${user.guestname || user.staffname}`,
         userInfo,
@@ -110,7 +114,7 @@ const Pay = ({ user: propUser, type: propType }) => {
     setSuccessMessage("");
 
     try {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/create`, {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/create`, {
         username: user.username,
         items: cartItems,
         total,

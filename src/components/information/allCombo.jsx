@@ -15,7 +15,7 @@ const AllCombo = ({ user, setShowLogin }) => {
   const [modalMessageType, setModalMessageType] = useState('');
 
   useEffect(() => {
-    axios.get("import.meta.env.VITE_API_URL/api/products")
+    axios.get(`${import.meta.env.VITE_API_URL}/api/products`)
       .then(res => {
         if (res.data.success) {
           // Chỉ lấy sản phẩm có category là combo
@@ -100,7 +100,7 @@ const AllCombo = ({ user, setShowLogin }) => {
     }
 
     try {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/cart/add`, {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/cart/add`, {
         guestUsername: user.username,
         productId: selectedProduct.productId,
         productName: selectedProduct.productName,

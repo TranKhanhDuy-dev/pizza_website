@@ -22,7 +22,7 @@ const Other = ({ user: propUser,  setShowLogin }) => {
 
   // Lấy sản phẩm từ server, chỉ lấy category === "khác"
   useEffect(() => {
-    axios.get("import.meta.env.VITE_API_URL/api/products")
+    axios.get(`${import.meta.env.VITE_API_URL}/api/products`)
       .then(res => {
         if (res.data.success) {
           setProducts(res.data.products.filter(p => p.category === "khác"));
@@ -80,7 +80,7 @@ const Other = ({ user: propUser,  setShowLogin }) => {
     const unitPrice = basePrice + extrasPrice;
 
     try {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/cart/add`, {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/cart/add`, {
         guestUsername: user.username,
         productId: selectedProduct.productId,
         productName: selectedProduct.productName,
