@@ -135,7 +135,7 @@ const Find = ({ user: propUser, type, setShowLogin }) => {
     const unitPrice = basePrice + sizePrice + crustPrice + extrasPrice - (selectedProduct.discount || 0);
 
     try {
-      const response = await axios.post("import.meta.env.VITE_API_URL/api/cart/add", {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/cart/add`, {
         guestUsername: user.username,
         productId: selectedProduct.productId,
         productName: selectedProduct.productName,

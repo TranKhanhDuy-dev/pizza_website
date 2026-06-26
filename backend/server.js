@@ -450,5 +450,6 @@ app.listen(PORT, () => {
 });
 
 app.get("/health", (req, res) => {
+    console.log("health");
     res.status(200).send("OK");
 });

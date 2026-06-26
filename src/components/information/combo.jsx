@@ -60,7 +60,7 @@ const Combo = ({ user, setShowLogin }) => {
     }
     const unitPrice = selectedCombo.quantity;
     try {
-      const response = await axios.post("import.meta.env.VITE_API_URL/api/cart/add", {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/cart/add`, {
         guestUsername: user.username,
         productId: selectedCombo.productId,
         productName: selectedCombo.productName,
